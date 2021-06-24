@@ -1,29 +1,42 @@
 class Hero:
+    def __init__(self):
+        self.health = None
+        self.attack = None
+        self.initiative = None
+        self.agility = None
+    
+    def take_damage(self):
+        pass
 
-    def update_score(self):
-        return Hero
 
-class Knight:
+class Knight(Hero):
 
     def __init__(self):
-        self.initiative = 5
-        self.endurance = 9
+        super().__init__()
+        self.health = 9
         self.attack = 6
-        self.flexibility = 4
+        self.initiative = 5
+        self.agility = 4
 
 
 class Wizard:
 
     def __init__(self):
-        self.initiative = 6
-        self.endurance = 4
+        super().__init__()
+        self.health = 4
         self.attack = 9
-        self.flexibility = 5
+        self.initiative = 6
+        self.agility = 5
 
 
 class Thief:
     def __init__(self):
-        self.initiative = 7
-        self.endurance = 5
+        super().__init__()
+        self.health = 5
         self.attack = 5
-        self.flexibility = 7
+        self.initiative = 7
+        self.agility = 7
+
+
+my_hero = Knight()
+print(my_hero.health)

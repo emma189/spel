@@ -10,4 +10,4 @@ class Room:
 def randomizer(list):
     return (random.choice(list))
 
-treasures = ['']
+treasures = []

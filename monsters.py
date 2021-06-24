@@ -1,6 +1,16 @@
-class Spider:
+class Monster:
 
     def __init__(self):
+        self.initiativ = None
+        self.endurance = None
+        self.attack = None
+        self.flexibility = None
+        self.commonality = None
+
+class Spider(Monster):
+
+    def __init__(self):
+        super().__init__()
         self.initiativ = 7
         self.endurance = 1
         self.attack = 2
@@ -8,9 +18,10 @@ class Spider:
         self.commonality = 20
 
 
-class Skeleton:
+class Skeleton(Monster):
 
     def __init__(self):
+        super().__init__()
         self.initiativ = 4
         self.endurance = 2
         self.attack = 3
@@ -18,9 +29,10 @@ class Skeleton:
         self.commonality = 15
 
 
-class Orc:
+class Orc(Monster):
 
     def __init__(self):
+        super().__init__()
         self.initiativ = 6
         self.endurance = 3
         self.attack = 4
@@ -28,9 +40,10 @@ class Orc:
         self.commonality = 10
 
 
-class Troll:
+class Troll(Monster):
 
     def __init__(self):
+        super().__init__()
         self.initiativ = 2
         self.endurance = 4
         self.attack = 7
